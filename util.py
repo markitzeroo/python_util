@@ -32,13 +32,13 @@ def sh(cmd):
 
 
 def fwrite(file, date):
-    f = open(file, "w")
+    f = open(file, "w", encoding="utf-8")
     f.write(date)
     f.close()
 
 
 def fread(file):
-    f = open(file, "r")
+    f = open(file, "r", encoding="utf-8")
     readed = str(f.read().strip())
     f.close()
 
